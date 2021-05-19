@@ -1,0 +1,379 @@
+:root {
+    font-size: 16px;
+    line-height: 1.5;
+    --header-color: rgb(174,174,174);
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.app{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+    "header" 
+    "nav" 
+    "content" 
+    "footer";
+}
+
+/*top-bar*/
+.app .header{
+    background-color: var(--header-color);
+    grid-area: header;
+}
+
+.app .header .top-bar .list-top{
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.app .header .top-bar .list-top> .item-top{
+    padding: 0 5px;
+    font-size: 13px;
+    
+}
+
+.app .header .top-bar .list-top> .item-top>a{
+    color: #000;
+}
+
+/*-----------------------------*/
+
+/*header-line*/
+.app .header>.header-line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.app .header>.header-line>a>img{
+   width: 200px;
+   height: 80px;
+   padding: 5px;
+}
+
+.header-line .control-box{
+    margin-left: 30%;
+}
+
+.header-line .control-box>a{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.header-line .control-box>a>i:hover{
+    color: goldenrod;
+}
+
+.header-line .control-box>a>i{
+    margin-top: 25px;
+    color: #000;
+}
+
+.header-line .control-box>a>.fa-list-ul{
+    display: none;
+}
+
+.header-line .control-box>.search{
+    width: 55px;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+    display: none;
+}
+
+.header-line .control-box>.search:focus{
+    width: 250px;
+    background-color: whitesmoke; 
+}
+
+/*--------------------------------------*/
+
+/*nav*/
+.nav{
+    height: 50px;
+    background-color: #000;
+}
+
+.nav .nav-list{
+    display: flex;
+    margin: auto;
+    list-style-type: none;
+    position: relative;
+    justify-content: center;
+}
+
+.nav .nav-list>.item-nav{
+    padding: 10px 35px;
+}
+
+.nav .nav-list>.item-nav>a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav .nav-list>.item-nav:hover>a{
+    color: goldenrod;
+}
+
+/*sub-nav*/
+.nav .nav-list .item-nav .sub-nav{
+    position: absolute;
+    list-style-type: none;
+    background: black;
+    padding: 0;
+    margin-top: 12px;
+    display: none;
+    z-index: 1;
+}
+
+.nav .nav-list .item-nav .sub-nav>.sub-nav-item{
+    padding: 10px;
+}
+
+.nav .nav-list .item-nav .sub-nav>.sub-nav-item>a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.sub-nav>.sub-nav-item:hover{
+    background: rgb(78, 74, 74);
+}
+
+.nav .nav-list .item-nav:nth-child(2):hover .sub-nav,
+.nav .nav-list .item-nav:nth-child(3):hover .sub-nav{
+    display: block;
+}
+
+/*content*/
+.content{
+    height: auto;
+    display: grid;
+    padding: 20px 50px;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 30px;
+    grid-template-areas: 
+    "title title"
+    "list-item box-total";
+    grid-gap: 10px;
+    background-color: white;
+}
+
+.content>h4{
+    width: 250px;
+    font-size: 18px;
+    margin: 0;
+    border-bottom: 2px solid black;
+    grid-area: title;
+}
+
+.list-card{
+    height: auto;
+    background-color: whitesmoke;
+}
+
+.card-item{
+    display: grid;
+    grid-template-columns: 20% 50% 20%;
+    grid-template-areas: 
+    "picture desc-body count";
+    grid-gap: 10px 30px;
+    border-top: 1px solid gray;
+    margin: 10px 10px;
+    padding: 10px 0;
+}
+
+.card-item>img{
+    width: 100px;
+    height: 100px;
+    grid-area: picture;
+}
+
+.card-item>input{
+    height: 20px;
+    width: 30%;
+    margin: auto;
+    grid-area: count;
+}
+
+.desc-body{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    grid-area: desc-body;
+}
+
+.desc-body> .desc-title{
+    text-align: left;
+}
+
+.desc-body> .desc-title>p{
+   margin: 0;
+}
+
+.desc-body> .desc-title> .title-1{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.desc-body> .desc-text{
+    text-align: center;
+    margin-left: 100px;
+}
+
+.desc-body> .desc-text>a>.fa-trash-alt{
+    color: #000;
+}
+
+/*box-total*/
+.box-total{
+    height: auto;
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+.box-total .location, .total-detail{
+    margin-left: 20px;
+}
+
+.location>p{
+    margin: 0;
+}
+
+.box-total .location> .item{
+    padding: 5px 0px;
+}
+
+.box-total .location> .address{
+    display: flex;
+}
+
+.box-total .location>.desc{
+    margin: 0;
+    margin-left: 20px;
+}
+
+.box-total .location> .item>i{
+    padding: 3px;
+    margin-right: 5px;
+}
+.box-total .location> .item>p{
+    margin: 0;
+}
+
+/*box-total total-detail*/
+.box-total .total-detail>.item{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.box-total> input{
+    width: 80%;
+    padding: 10px;
+    background-color: orange;
+    color: #ffff;
+    margin-left: 10%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.box-total> input:hover{
+    background-color: rgb(255, 145, 0);
+}
+
+/*footer*/
+.footer{
+    text-align: center;
+    font-size: 18px;
+    background-color:var(--header-color);
+    color: #000000;
+    height: auto;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.footer .left{
+    text-align: left;
+    /* float: left; */
+}
+
+.footer .left>p{
+    margin: 0;
+    margin-left: 40px;
+}
+
+.footer .left>.title-left{
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 3px solid;
+    margin-top: 5px;
+}
+
+.footer .left>.desc{
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.footer .left .footer-item{
+    list-style-type: none ;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.footer .left .list-icon{
+    margin-left: 40px;
+}
+
+.footer .left .list-icon>a>i{
+    font-size: 20px;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 50%;
+    color: #000;
+}
+
+
+
+.footer .right{
+    margin-top: 5px;
+    /* float: right; */
+    margin-left: 40px;
+}
+
+.footer .right>.list-right{
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 3px solid;
+    margin: 0;
+    text-align: left;
+    padding: 0;
+}
+
+.footer .right>.list-right>li>a{
+    margin-right: 15px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+
+.footer .right>.list-right>li>a:hover{
+    color: goldenrod;
+}
+
+.footer .right>p{
+    text-align: left;
+    font-size: 1rem;
+}
