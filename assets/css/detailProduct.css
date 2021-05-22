@@ -157,8 +157,104 @@ body {
 
 /*Conetent*/
 .content{
-    height: 500px;
+    display: grid;
+    padding: 30px;
+    grid-template-columns:3.5fr 1.5fr;
+    grid-template-areas: 
+    "box-left" "box-right";
+    grid-column-gap: 10px;
 }
+
+/*start box-left*/
+.content .box-left .box-top{
+    background-color: whitesmoke;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.content .box-left .product-img>img{
+    width: 40vh;
+    height: 40vh;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.box-left .box-top .product-detail{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.box-left .box-top .product-detail >.control-box>input{
+    width: 40%;
+    height: 40px;
+    margin-top: 50px;
+    margin-right: 20px;
+    border: none;
+}
+
+.box-left .box-top .product-detail> .fa-star{
+    margin-top: 10px;
+}
+
+.box-left .box-top .product-detail >.control-box>#buy{
+    background-color: gold;
+}
+
+.box-left .box-top .product-detail >.control-box>#buy:hover{
+    background-color: rgb(189, 166, 34);
+}
+
+.box-left .box-top .product-detail >.control-box>#addCart{
+    background-color: orange;
+}
+
+.box-left .box-top .product-detail >.control-box>#addCart:hover{
+    background-color: rgb(185, 133, 34);
+}
+
+.box-left .box-top .product-detail > p{
+    color: orange;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.box-left .product-info{
+    background-color: whitesmoke;
+    margin-top: 20px;
+}
+
+.box-left .product-info>p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.box-left .product-info>img{
+    width: 110vh;
+    margin: 10vh;
+}
+/*end box-left*/
+
+.checked{
+    color: goldenrod;
+}
+
+.box-right{
+    background-color: whitesmoke;
+}
+.box-right>table>tbody>tr{
+    width: 100%;
+}
+.box-right>table>tbody>tr>td>a>img{
+    width: 100px;
+    height: 100px;
+}
+
+.box-right>table>tbody>tr:hover{
+    background-color: wheat;
+}
+
 /*--------------------------------*/
 .footer{
     text-align: center;
@@ -209,8 +305,6 @@ body {
     border-radius: 50%;
     color: #000;
 }
-
-
 
 .footer .right{
     margin-top: 5px;
