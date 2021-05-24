@@ -82,6 +82,8 @@ body {
 
 .header-line .control-box>a>.fa-list-ul{
     display: none;
+    margin-left: 10px;
+    font-size: 30px;
 }
 
 .header-line .control-box>.search{
@@ -94,6 +96,10 @@ body {
 .header-line .control-box>.search:focus{
     width: 250px;
     background-color: whitesmoke; 
+}
+
+.header-line>.control-box>i.fas.fa-list-ul>ul.nav-list{
+    display: none;
 }
 
 /*--------------------------------------*/
@@ -173,6 +179,26 @@ body {
     grid-gap: 30px;
 }
 
+@media screen and (max-width: 600px) {
+    .content .product{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2,45%);
+        grid-gap: 30px;
+    }
+
+    .nav .nav-list .item-nav>a{
+        font-size: 16px;
+        
+    }
+
+    .nav .nav-list .item-nav{
+        padding: 10px 20px;
+    }
+    
+}
+
+
 .page-item>a:hover{
     color: goldenrod;
 }
@@ -181,6 +207,13 @@ body {
     color: #000;
 }
 
+.card>.card-body>a{
+    text-decoration: none;
+    color: black;
+}
+.card>.card-body>a:hover{
+    color: orange;
+}
 
 .footer{
     text-align: center;
