@@ -161,64 +161,43 @@ body {
 }
 
 /*content*/
-.content{
-    padding: 20px 50px;
+.content> .row > .header-content{
+    font-size: 25px;
+    font-weight: 700;
+    text-shadow: 2px 2px gray;
+    border-bottom: 2px solid gray;
 }
 
-.content>h4{
-    width: 280px;
+.content >.row> .list-info{
+    list-style-type: none;
     font-size: 18px;
-    margin-bottom: 30px;
-    border-bottom: 2px solid black;
+    font-weight: 600px;
 }
 
-.content .product{
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(4,23%);
-    grid-gap: 30px;
+.content >.row> .list-info>.item>ul{
+    list-style-type: none;
+    list-style: decimal;
+    font-size: 16px;
+    font-style: italic;
 }
 
-.content .product>.card>img{
-    width: 286px;
-    height: 250px;
+.content>.row>img{
+    margin-left: 15vw;
 }
 
 @media screen and (max-width: 600px) {
-    .content .product{
-        display: grid;
-        align-items: center;
-        grid-template-columns: repeat(2,45%);
-        grid-gap: 30px;
-    }
-
     .nav .nav-list .item-nav>a{
-        font-size: 16px;
+        font-size: 13px;
         
     }
 
     .nav .nav-list .item-nav{
-        padding: 10px 20px;
+        padding: 10px 10px;
     }
     
 }
 
 
-.page-item>a:hover{
-    color: goldenrod;
-}
-
-.page-item>a{
-    color: #000;
-}
-
-.card>.card-body>a{
-    text-decoration: none;
-    color: black;
-}
-.card>.card-body>a:hover{
-    color: orange;
-}
 
 .footer{
     text-align: center;

@@ -15,8 +15,8 @@
         <div class="header">
             <div class="top-bar">
                 <ul class="list-top">
-                    <li class="item-top"><i class="fas fa-bell"></i><a href="">Thông báo</a></li>
-                    <li class="item-top"><i class="fas fa-question-circle"></i><a href="">Hỗ trợ</a></li>
+                    <li class="item-top"><i class="fas fa-bell"></i><a href="#" id="thongbao">Thông báo</a></li>
+                    <li class="item-top"><i class="fas fa-question-circle"></i><a href="../html/baohanh.html">Hỗ trợ</a></li>
                     <li class="item-top" id="user"><a href="#"><i class="fas fa-user"></i></a></li>
                 </ul>
             </div>
@@ -28,7 +28,7 @@
                     <input type="text" placeholder="Search" class="search">
                     <a href="#"><i class="fas fa-search"></i></a>
                     <a href="./giohang.html"><i class="fas fa-shopping-cart"></i></a>
-                    <a href="#"><i class="fas fa-list-ul"></i></a>
+                    
                 </div>
             </div>
        </div>
@@ -51,7 +51,7 @@
                         
                     </ul>
                 </li>
-                <li class="item-nav" id="support"><a href="">BẢO HÀNH</a></li>
+                <li class="item-nav" id="support"><a href="../html/baohanh.html">BẢO HÀNH</a></li>
             </ul>
        </div>
 
@@ -61,37 +61,37 @@
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="../img/product/rolex-Sky-Dweller.png" alt="Card image cap">
                     <div class="card-body">
-                      <a href="../html/product/rolexProduct.html"><h5 class="card-title">Rolex-Sky-Dweller</h5></a>
+                      <a href="../html/product/rolexProduct.html"><h5 class="card-title">Rolex - Sky #970</h5></a>
                       <p class="card-text">3.000.000 VNĐ</p>
                       
                     </div>
                 </div>
 
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="../img/product/rolex-Sky-Dweller.png" alt="Card image cap">
+                    <img class="card-img-top" src="../img/product/rolex_01.jpg" alt="Card image cap">
                     <div class="card-body">
-                      <a href="../html/product/rolexProduct.html"><h5 class="card-title">Rolex-Sky-Dweller</h5></a>
-                      <p class="card-text">3.000.000 VNĐ</p>
+                      <a href="../html/product/rolexProduct.html"><h5 class="card-title">Rolex - Sky #971</h5></a>
+                      <p class="card-text">16.800.000 VNĐ</p>
                       
                     </div>
                 </div>
 
 
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="../img/product/rolex-Sky-Dweller.png" alt="Card image cap">
+                    <img class="card-img-top" src="../img/product/rolex_02.jpg" alt="Card image cap">
                     <div class="card-body">
-                      <a href="../html/product/rolexProduct.html"><h5 class="card-title">Rolex-Sky-Dweller</h5></a>
-                      <p class="card-text">3.000.000 VNĐ</p>
+                      <a href="../html/product/rolexProduct.html"><h5 class="card-title">Rolex - Sky #972</h5></a>
+                      <p class="card-text">17.600.000 VNĐ</p>
                       
                     </div>
                 </div>
 
 
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="../img/product/rolex-Sky-Dweller.png" alt="Card image cap">
+                    <img class="card-img-top" src="../img/product/rolex_03.jpg" alt="Card image cap">
                     <div class="card-body">
-                      <a href="../html/product/rolexProduct.html"><h5 class="card-title">Rolex-Sky-Dweller</h5></a>
-                      <p class="card-text">3.000.000 VNĐ</p>
+                      <a href="../html/product/rolexProduct.html"><h5 class="card-title">Rolex - Sky #973</h5></a>
+                      <p class="card-text">18.000.000 VNĐ</p>
                       
                     </div>
                 </div>
@@ -185,5 +185,13 @@
         </div>
     </div>
     </div>
+
+    <script>
+        let thongbao = document.getElementById('thongbao');
+        console.log(thongbao);
+        thongbao.onclick = function(){
+          alert("Hiện tại chưa có thông báo nào!")
+        }
+    </script>
 </body>
 </html>

@@ -15,8 +15,8 @@
         <div class="header">
             <div class="top-bar">
                 <ul class="list-top">
-                    <li class="item-top"><i class="fas fa-bell"></i><a href="">Thông báo</a></li>
-                    <li class="item-top"><i class="fas fa-question-circle"></i><a href="">Hỗ trợ</a></li>
+                    <li class="item-top"><i class="fas fa-bell"></i><a href="" id="thongbao">Thông báo</a></li>
+                    <li class="item-top"><i class="fas fa-question-circle"></i><a href="../baohanh.html">Hỗ trợ</a></li>
                     <li class="item-top" id="user"><a href="#"><i class="fas fa-user"></i></a></li>
                 </ul>
             </div>
@@ -49,7 +49,7 @@
                         <li class="sub-nav-item"><a href="../rolex.html">ROLEX</a></li>
                     </ul>
                 </li>
-                <li class="item-nav" id="support"><a href="">BẢO HÀNH</a></li>
+                <li class="item-nav" id="support"><a href="../baohanh.html">BẢO HÀNH</a></li>
             </ul>
        </div>
 
@@ -229,6 +229,16 @@
             console.log(pay);
           }
 
+          let addCart = document.getElementById('addCart').onclick = function() {
+            alert("Sản phẩm đã được thêm vào giỏ hàng");
+            window.location = "../giohang.html";
+          }
+          
+          let thongbao = document.getElementById('thongbao');
+          console.log(thongbao);
+          thongbao.onclick = function(){
+            alert("Hiện tại chưa có thông báo nào!")
+          }
           
       </script>
 </body>

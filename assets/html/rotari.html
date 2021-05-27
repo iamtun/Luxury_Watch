@@ -15,8 +15,8 @@
         <div class="header">
             <div class="top-bar">
                 <ul class="list-top">
-                    <li class="item-top"><i class="fas fa-bell"></i><a href="">Thông báo</a></li>
-                    <li class="item-top"><i class="fas fa-question-circle"></i><a href="">Hỗ trợ</a></li>
+                    <li class="item-top"><i class="fas fa-bell"></i><a href="#" id="thongbao">Thông báo</a></li>
+                    <li class="item-top"><i class="fas fa-question-circle"></i><a href="../html/baohanh.html">Hỗ trợ</a></li>
                     <li class="item-top" id="user"><a href="#"><i class="fas fa-user"></i></a></li>
                 </ul>
             </div>
@@ -28,7 +28,7 @@
                     <input type="text" placeholder="Search" class="search">
                     <a href="#"><i class="fas fa-search"></i></a>
                     <a href="./giohang.html"><i class="fas fa-shopping-cart"></i></a>
-                    <a href="#"><i class="fas fa-list-ul"></i></a>
+                    
                 </div>
             </div>
        </div>
@@ -39,7 +39,6 @@
                 <li class="item-nav"><a href="">DANH MỤC</a>
                     <ul class="sub-nav">
                         <li class="sub-nav-item"><a href="./sanpham.html">SẢN PHẨM</a></li>
-                        <li class="sub-nav-item"><a href="">BÁN CHẠY</a></li>
                         <li class="sub-nav-item"><a href="../../index.html#product-hot">SẢN PHẨM HOT</a></li>
                         
                     </ul>
@@ -53,7 +52,7 @@
                         
                     </ul>
                 </li>
-                <li class="item-nav" id="support"><a href="">BẢO HÀNH</a></li>
+                <li class="item-nav" id="support"><a href="../html/baohanh.html">BẢO HÀNH</a></li>
             </ul>
        </div>
 
@@ -63,37 +62,37 @@
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="../img/product/Rotary-GS90532.jpg" alt="Card image cap">
                     <div class="card-body">
-                     <a href="../html/product/rtrProduct.html"> <h5 class="card-title">ROTARY GS90532/06 – NAM – KÍNH SAPPHIRITE – AUTOMATIC (TỰ ĐỘNG) – DÂY DA</h5></a>
+                     <a href="../html/product/rtrProduct.html"> <h5 class="card-title">ROTARY #870 – NAM – KÍNH SAPPHIRITE – AUTOMATIC (TỰ ĐỘNG) – DÂY DA</h5></a>
                       <p class="card-text">18.900.000 VNĐ</p>
                       
                     </div>
                 </div>
 
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="../img/product/Rotary-GS90532.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../img/product/rotary_01.jpg" alt="Card image cap">
                     <div class="card-body">
-                     <a href="../html/product/rtrProduct.html"> <h5 class="card-title">ROTARY GS90532/06 – NAM – KÍNH SAPPHIRITE – AUTOMATIC (TỰ ĐỘNG) – DÂY DA</h5></a>
-                      <p class="card-text">18.900.000 VNĐ</p>
+                     <a href="../html/product/rtrProduct.html"> <h5 class="card-title">ROTARY #871 – NAM – KÍNH SAPPHIRITE – AUTOMATIC (TỰ ĐỘNG) – DÂY DA</h5></a>
+                      <p class="card-text">10.000.000 VNĐ</p>
                       
                     </div>
                 </div>
 
 
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="../img/product/Rotary-GS90532.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../img/product/rotary_02.jpg" alt="Card image cap">
                     <div class="card-body">
-                     <a href="../html/product/rtrProduct.html"> <h5 class="card-title">ROTARY GS90532/06 – NAM – KÍNH SAPPHIRITE – AUTOMATIC (TỰ ĐỘNG) – DÂY DA</h5></a>
-                      <p class="card-text">18.900.000 VNĐ</p>
+                     <a href="../html/product/rtrProduct.html"> <h5 class="card-title">ROTARY #872 – NAM – KÍNH SAPPHIRITE – AUTOMATIC (TỰ ĐỘNG) – DÂY DA</h5></a>
+                      <p class="card-text">12.300.000 VNĐ</p>
                       
                     </div>
                 </div>
 
 
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="../img/product/Rotary-GS90532.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../img/product/rotary_03.jpg" alt="Card image cap">
                     <div class="card-body">
-                     <a href="../html/product/rtrProduct.html"> <h5 class="card-title">ROTARY GS90532/06 – NAM – KÍNH SAPPHIRITE – AUTOMATIC (TỰ ĐỘNG) – DÂY DA</h5></a>
-                      <p class="card-text">18.900.000 VNĐ</p>
+                     <a href="../html/product/rtrProduct.html"> <h5 class="card-title">ROTARY #873 – NAM – KÍNH SAPPHIRITE – AUTOMATIC (TỰ ĐỘNG) – DÂY DA</h5></a>
+                      <p class="card-text">11.000.000 VNĐ</p>
                       
                     </div>
                 </div>
@@ -187,5 +186,13 @@
         </div>
     </div>
     </div>
+
+    <script>
+        let thongbao = document.getElementById('thongbao');
+        console.log(thongbao);
+        thongbao.onclick = function(){
+          alert("Hiện tại chưa có thông báo nào!")
+        }
+    </script>
 </body>
 </html>
