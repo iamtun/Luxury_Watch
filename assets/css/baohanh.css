@@ -185,6 +185,22 @@ body {
     margin-left: 15vw;
 }
 
+.content>.row>.introduce{
+    padding: 10px 30px;
+}
+
+.content >.row> table{
+    margin: 10px 10%;
+    border: 1px solid black;
+}
+
+.content>.row> table>tbody>tr>th,
+.content>.row> table>tbody>tr>td{
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
 @media screen and (max-width: 600px) {
     .nav .nav-list .item-nav>a{
         font-size: 13px;
@@ -196,6 +212,19 @@ body {
     }
     
 }
+
+@media screen and (max-width: 415px) {
+    .nav .nav-list .item-nav>a{
+        font-size: 12px;
+        
+    }
+
+    .nav .nav-list .item-nav{
+        padding: 5px 5px;
+    }
+    
+}
+
 
 
 
