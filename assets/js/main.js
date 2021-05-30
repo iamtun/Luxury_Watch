@@ -30,7 +30,6 @@ submit.onclick = function(){
 
         let regis = document.querySelector('#regis');
         regis.style.display = 'none';
-        
     }else{
         alert('Tài khoản hoặc mật khẩu không chính xác');
     }
